@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            text-align: center;
+            text-align-last: center;
+            vertical-align: top;
+        }
+        img{
+            width: 100%;
+        }
+        @media screen and (width>600px){
+            .container{
+                display: flex; 
+                flex-direction: row; 
+                gap: 1vw; 
+            }
+            .sandwich{
+                width: 24vw;
+                height: 50vh;
+                margin-top: 1vh;
+                margin-left: 1vh;
+            }
+            .cherries{
+                width: 24vw;
+                height: 50vh;
+                margin-top: 1vh;
+            }
+            .steak{
+                width: 24vw;
+                height: 50vh;
+                margin-top: 1vh;
+            }
+            .wine{
+                width: 24vw;
+                height: 50vh;
+                margin-top: 1vh;
+                margin-right: 1vh;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="./sandwich.jpg" alt="image not found" class="sandwich">
+            <h3>The Perfect Sandwich, A real NYC Classic</h3>
+            <p>Just some random text like My name is abhiram I don't like sandwiches</p>
+        </div>
+        <div class="item">
+            <img src="./steak.jpg" alt="image not found" class="steak">
+            <h3>The Perfect Sandwich, A real NYC Classic</h3>
+            <p>Just some random text like I love watching anime , I recommend animes like death note , one piece , naruto, bleach.</p>
+        </div>
+        <div class="item">
+            <img src="./cherries.jpg" alt="image not found" class="cherries">
+            <h3>The Perfect Sandwich, A real NYC Classic</h3>
+            <p>Just some random text like Hello everyone how are you , I  am fine thank u , I hope your doing good</p>
+        </div>
+        <div class="item">
+            <img src="./wine.jpg" alt="image not found" class="wine">
+            <h3>The Perfect Sandwich, A real NYC Classic</h3>
+            <p>Just some random text like bankai sembokura kageyoshi , oreva monkey d lufffy.</p>
+        </div>
+    </div>
+</body>
+</html>
